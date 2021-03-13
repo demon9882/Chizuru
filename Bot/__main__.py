@@ -60,7 +60,7 @@ def start(update, context):
         InlineKeyboardButton(
             text="Add to Group 👥", url="t.me/{}?startgroup=true".format(context.bot.username)
         ),
-        InlineKeyboardButton("Maintained by", url="t.me/dank_as_fuck"),
+        InlineKeyboardButton("Maintained by", url="t.me/death898"),
     ]
 ]
     if update.effective_chat.type == "private":
