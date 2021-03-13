@@ -1,0 +1,41 @@
+{
+    "name": "chizuru",
+    "description": "unique content bot",
+    "keywords": [
+        "anime",
+        "telegram",
+        "python"
+    ],
+    "website": "https://github.com/demon9882",
+    "repository": "https://github.com/demon9882/Chizuru",
+    "success_url": "https://telegram.dog/death898",
+    "env": {
+        "LOGGER": {
+            "description": "Set this value to True",
+            "value": "True"
+        },
+        "TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "DB_URI": {
+            "description": "Your Database Url",
+            "value": ""
+        },
+        "OWNER_ID": {
+            "description": "Get this from @MissRose_bot",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
